@@ -5,13 +5,39 @@ import unittest
 
 class calculate_combinationsTest(unittest.TestCase):
 
-    arr1=[1,2,3,4]
-    targsum=6
-    realsum=2
-    def test4(self):
-        random.shuffle(self.arr1)
-        self.assertEqual(calculate_combinations(self.arr1,self.targsum),self.realsum)
+    def test1(self):
+        arr1 = [1, 2, 3, 4]
+        targsum = 6
+        realsum = 2
+        random.shuffle(arr1)
+        self.assertEqual(calculate_combinations(arr1, targsum), realsum)
 
+    def test2(self):
+        arr1 = [-1, 2, -3, 4]
+        targsum = 6
+        realsum = 2
+        random.shuffle(arr1)
+        self.assertEqual(calculate_combinations(arr1, targsum), realsum)
+
+    def test3(self):
+        arr1 = ['A', 'B', 'C', 'D']
+        targsum = 6
+        realsum = 2
+        random.shuffle(arr1)
+        self.assertEqual(calculate_combinations(arr1, targsum), realsum)
+
+    def test4(self):
+        arr1 = ['1', '2', '3', '4']
+        targsum = 6
+        realsum = 2
+        random.shuffle(arr1)
+        self.assertEqual(calculate_combinations(arr1, targsum), realsum)
+
+    def test5(self):
+        arr1 = [-1, 2, -3, 4]
+        targsum = 6
+        realsum = 2
+        random.shuffle(arr1)
+        self.assertEqual(calculate_combinations(arr1, targsum), realsum)
 if __name__ == "__main__":
     unittest.main()
-
