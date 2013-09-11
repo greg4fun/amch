@@ -19,6 +19,6 @@ def calculate_combinations(elements, target_sum):
                 sumcombinations += 1
     return sumcombinations
 
-arr1 = [5, 10, 15, 5]
-tsum = 15
-print calculate_combinations(arr1, tsum)
+#arr1 = [5, 10, 15, 5]
+#tsum = 15
+#print calculate_combinations(arr1, tsum)
